@@ -54,10 +54,15 @@ public class Task {
         return assignedUser;
     }
 
+    public void setIsCompleted(boolean isCompleted) {
+        this.isCompleted = isCompleted;
+    }
+
     @Override
     public String toString() {
         return "Task ID: " + taskID + "\nTask Name: " + taskName + "\nTask description: " + taskDescription +  "\nDeadline: " + deadline +
                 "\nIs completed: " + isCompleted +
-                "\nAssigned user: " + assignedUser;
+                "\nAssigned user: " + assignedUser +
+                "\nTask created: " + createdDate;
     }
 }
